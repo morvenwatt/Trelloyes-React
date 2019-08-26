@@ -1,7 +1,7 @@
 import React from 'react';
-import List from '.src/List.js';
-import './src/App.css';
-import STORE from '.src/STORE.js'
+import List from './List.js';
+import './App.css';
+
 
 
 class App extends React.Component {
@@ -10,6 +10,11 @@ class App extends React.Component {
       lists: [],
       allCards: {},
     }
+  }
+  constructor (props){
+    super(props)
+    const { store } = props
+    this.state = { store }
   }
   render (){
     const { store } = this.props
