@@ -5,12 +5,12 @@ import './List.css'
 function List(props){
     const { cards = [], header } = props
     return (
-        <div class="App-list">
-        <section class="List">
-          <header class="List-header">
+        <div className="App-list">
+        <section className="List">
+          <header className="List-header">
             <h2>{header}</h2>
           </header>
-          <div class="List-cards">
+          <div className="List-cards">
             {cards.map((card) =>
                 <Card
                 key={card.id}
@@ -18,7 +18,7 @@ function List(props){
                 content={card.content}
                  />
                  )}
-              <button type="button" class="List-add-button">
+              <button type="button" className="List-add-button">
                 + Add Random Card
               </button>
           </div>
