@@ -5,17 +5,18 @@ import './App.css';
 
 
 class App extends React.Component {
+  
   static defaultProps = {
     store: {
       lists: [],
       allCards: {},
     }
   }
-  constructor (props){
+  /*constructor (props){
     super(props)
     const { store } = props
     this.state = { store }
-  }
+  }*/
   render (){
     const { store } = this.props
     return (

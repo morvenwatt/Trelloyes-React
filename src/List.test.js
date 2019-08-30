@@ -17,3 +17,14 @@ describe('List component', () => {
       expect(tree).toMatchSnapshot();  
     })
 });
+
+/* So, then I could write a test that went something like this?
+What is an instance of a different Smoke test?
+ 
+it ('renders card with image', () => {
+    const tree = renderer
+    .create(<Card img='xyz' />) --- IMG HERE WOULD BE A PROP
+    .toJSON();
+    expect(tree).toMatchSnapshot();
+})
+*/

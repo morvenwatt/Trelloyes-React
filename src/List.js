@@ -3,15 +3,15 @@ import Card from './Card';
 import './List.css'
 
 function List(props){
-    const { cards = [], header } = props
+    //const { cards = [], header } = props
     return (
         <div className="App-list">
         <section className="List">
           <header className="List-header">
-            <h2>{header}</h2>
+            <h2>{props.header}</h2>
           </header>
           <div className="List-cards">
-            {cards.map((card) =>
+            {props.cards.map((card) =>
                 <Card
                 key={card.id}
                 title={card.title}
